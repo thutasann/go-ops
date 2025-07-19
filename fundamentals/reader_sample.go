@@ -22,7 +22,7 @@ func (m *MySlowReader) Read(p []byte) (int, error) {
 	return 0, io.EOF
 }
 
-func reader_sample() {
+func Reader_Sample() {
 	mySlowReaderInstance := &MySlowReader{
 		contents: "hello world!",
 	}
