@@ -1,13 +1,21 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"io"
 	"log"
 	"net/http"
 	"net/url"
 	"os"
+	"strings"
 )
+
+type Words struct {
+	Page  string   `json:"page"`
+	Input string   `json:"input"`
+	Words []string `json:"words"`
+}
 
 // go run *.go arg1 arg2
 func args_sample() {
@@ -39,5 +47,18 @@ func args_sample() {
 		log.Fatal(err)
 	}
 
-	fmt.Printf("HTTP Status Code: %d\nBody: %s\n", response.StatusCode, body)
+	if response.StatusCode != 200 {
+		fmt.Printf("Invalid output (HTTP code %d) %s\n", response.StatusCode, body)
+		os.Exit(1)
+	}
+
+	var words Words
+
+	err = json.Unmarshal(body, &words)
+
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Printf("JSON Parsed\nPage: %s\nWords: %v\n", words.Page, strings.Join(words.Words, ", "))
 }
