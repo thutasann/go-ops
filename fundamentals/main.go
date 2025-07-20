@@ -1,6 +1,8 @@
 package main
 
-import "github.com/thutasann/goops/goroutines"
+import (
+	"github.com/thutasann/goops/mutex"
+)
 
 func main() {
 	// Args_Sample()
@@ -18,5 +20,6 @@ func main() {
 	// JSON_Parsing_Sample()
 
 	// goroutines.GoRoutines_Sample_Two()
-	goroutines.Channel_Sample_One()
+	// goroutines.Channel_Sample_One()
+	mutex.Mutex_Sample()
 }
