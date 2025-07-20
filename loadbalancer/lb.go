@@ -1,6 +1,9 @@
 package main
 
-import "net/http"
+import (
+	"fmt"
+	"net/http"
+)
 
 type LoadBalancer struct {
 	port            string
@@ -16,6 +19,20 @@ func NewLoadBalancer(port string, servers []Server) *LoadBalancer {
 	}
 }
 
-func (lb *LoadBalancer) getNextAvailableServer() Server {}
+// Get Next Available Server
+func (lb *LoadBalancer) getNextAvailableServer() Server {
+	server := lb.servers[lb.roundRobinCount%len(lb.servers)]
+	for !server.IsAlive() {
+		lb.roundRobinCount++
+		server = lb.servers[lb.roundRobinCount%len(lb.servers)]
+	}
+	lb.roundRobinCount++
+	return server
+}
 
-func (lb *LoadBalancer) serveProxy(wr http.ResponseWriter, r *http.Request) {}
+// Serve Proxy
+func (lb *LoadBalancer) serveProxy(rw http.ResponseWriter, r *http.Request) {
+	targetSever := lb.getNextAvailableServer()
+	fmt.Printf("forwarding request to address %s\n", targetSever.Address())
+	targetSever.Serve(rw, r)
+}

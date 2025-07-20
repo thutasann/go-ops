@@ -27,8 +27,14 @@ func newSimpleServer(addr string) *simpleServer {
 	}
 }
 
-func (s simpleServer) Address() string {}
+func (s simpleServer) Address() string {
+	return s.addr
+}
 
-func (s simpleServer) IsAlive() bool {}
+func (s simpleServer) IsAlive() bool {
+	return true
+}
 
-func (s simpleServer) Serve(rw http.ResponseWriter, r *http.Request) {}
+func (s simpleServer) Serve(rw http.ResponseWriter, r *http.Request) {
+	s.proxy.ServeHTTP(rw, r)
+}
