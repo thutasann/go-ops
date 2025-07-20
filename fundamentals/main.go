@@ -1,5 +1,7 @@
 package main
 
+import "github.com/thutasann/goops/goroutines"
+
 func main() {
 	// Args_Sample()
 	// Reader_Sample()
@@ -13,5 +15,8 @@ func main() {
 
 	// Type_Switch_Sample()
 	// Generic_Sample()
-	JSON_Parsing_Sample()
+	// JSON_Parsing_Sample()
+
+	// goroutines.GoRoutines_Sample_Two()
+	goroutines.Channel_Sample_One()
 }
