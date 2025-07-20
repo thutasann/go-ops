@@ -11,5 +11,6 @@ func main() {
 
 	// Array_Slice_Sample()
 
-	Type_Switch_Sample()
+	// Type_Switch_Sample()
+	Generic_Sample()
 }
