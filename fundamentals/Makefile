@@ -6,6 +6,7 @@ build:
 	go build -o $(BUILD_DIR)/$(APP_NAME) *.go
 
 dev:
+	clear
 	@echo "Running in development mode..."
 	@go run $(filter-out %_test.go, $(wildcard *.go))
 

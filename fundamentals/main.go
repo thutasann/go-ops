@@ -9,5 +9,7 @@ func main() {
 	// pointers.Pointer_Slice_Sample()
 	// pointers.Pointer_Map_Sample()
 
-	Array_Slice_Sample()
+	// Array_Slice_Sample()
+
+	Type_Switch_Sample()
 }
