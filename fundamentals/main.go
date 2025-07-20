@@ -1,7 +1,5 @@
 package main
 
-import "github.com/thutasann/goops/pointers"
-
 func main() {
 	// Args_Sample()
 	// Reader_Sample()
@@ -9,5 +7,7 @@ func main() {
 
 	// pointers.Pointer_Sample()
 	// pointers.Pointer_Slice_Sample()
-	pointers.Pointer_Map_Sample()
+	// pointers.Pointer_Map_Sample()
+
+	Array_Slice_Sample()
 }

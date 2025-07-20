@@ -25,7 +25,7 @@ type Words struct {
 }
 
 func (w Words) GetResponse() string {
-	return fmt.Sprintf("%s", strings.Join(w.Words, ", "))
+	return fmt.Sprintf("response: %s", strings.Join(w.Words, ", "))
 }
 
 type Occurrence struct {
@@ -39,7 +39,7 @@ func (o Occurrence) GetResponse() string {
 		out = append(out, fmt.Sprintf("%s (%d)", k, v))
 	}
 
-	return fmt.Sprintf("%s", strings.Join(out, ", "))
+	return fmt.Sprintf("response: %s", strings.Join(out, ", "))
 }
 
 func Http_JSON_Get_Sample() {
@@ -91,7 +91,7 @@ func do_request(requestUrl string) (Response, error) {
 	}
 
 	if response.StatusCode != 200 {
-		return nil, fmt.Errorf("Invalid output (HTTP code %d) %s\n", response.StatusCode, body)
+		return nil, fmt.Errorf("invalid output (http code %d) %s", response.StatusCode, body)
 	}
 
 	var page Page
