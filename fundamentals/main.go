@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/thutasann/goops/mutex"
+	"github.com/thutasann/goops/interfaces"
 )
 
 func main() {
@@ -21,5 +21,7 @@ func main() {
 
 	// goroutines.GoRoutines_Sample_Two()
 	// goroutines.Channel_Sample_One()
-	mutex.Mutex_Sample()
+	// mutex.Mutex_Sample()
+
+	interfaces.Interface_Sample()
 }
