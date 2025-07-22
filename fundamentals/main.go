@@ -4,6 +4,7 @@ func main() {
 	// Args_Sample()
 	// Reader_Sample()
 	// Custom_RoundTrip_Sample()
+	Loggin_Round_Tripper()
 
 	// pointers.Pointer_Sample()
 	// pointers.Pointer_Slice_Sample()
@@ -21,5 +22,5 @@ func main() {
 
 	// interfaces.Interface_Sample()
 
-	Worker_Pool_Sample()
+	// Worker_Pool_Sample()
 }
