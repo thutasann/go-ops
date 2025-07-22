@@ -1,9 +1,5 @@
 package main
 
-import (
-	"github.com/thutasann/goops/interfaces"
-)
-
 func main() {
 	// Args_Sample()
 	// Reader_Sample()
@@ -23,5 +19,7 @@ func main() {
 	// goroutines.Channel_Sample_One()
 	// mutex.Mutex_Sample()
 
-	interfaces.Interface_Sample()
+	// interfaces.Interface_Sample()
+
+	Worker_Pool_Sample()
 }
