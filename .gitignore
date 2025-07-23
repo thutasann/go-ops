@@ -17,7 +17,7 @@ bin
 *.crt
 *.key
 
-# ----------- Nextjs
+# ----------- Nodejs
 # Node modules
 node_modules/
 

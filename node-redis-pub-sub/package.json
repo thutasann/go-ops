@@ -1,0 +1,17 @@
+{
+  "name": "redis-pub-sub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "pub_sub.js",
+  "scripts": {
+    "start:b": "node service_b.js",
+    "start:a": "node service_a.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "redis": "^5.6.0",
+    "socket.io": "^4.8.1"
+  }
+}
