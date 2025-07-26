@@ -1,7 +1,7 @@
 # 
 # Build go project
 # 
-FROM golang:1.18-alpine as go-builder
+FROM golang:1.18-alpine AS go-builder
 
 WORKDIR /app
 
