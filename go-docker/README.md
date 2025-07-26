@@ -19,11 +19,17 @@ curl localhost:8080
 ```bash
 docker ps
 
-docker exec -it <container_id> /bin/bash
+docker exec -it <container_id> /bin/sh
 
 ls
 
 ls -ahl
 
 ldd server
+```
+
+**Scratch**
+
+```bash
+docker build -t test-server-scratch -f Dockerfile.scratch .
 ```
