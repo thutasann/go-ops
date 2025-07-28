@@ -1,10 +1,12 @@
 package main
 
+import "github.com/thutasann/goops/goroutines"
+
 func main() {
 	// Args_Sample()
 	// Reader_Sample()
 	// Custom_RoundTrip_Sample()
-	Loggin_Round_Tripper()
+	// Loggin_Round_Tripper()
 
 	// pointers.Pointer_Sample()
 	// pointers.Pointer_Slice_Sample()
@@ -19,6 +21,7 @@ func main() {
 	// goroutines.GoRoutines_Sample_Two()
 	// goroutines.Channel_Sample_One()
 	// mutex.Mutex_Sample()
+	goroutines.WaitGroup_Sample()
 
 	// interfaces.Interface_Sample()
 
