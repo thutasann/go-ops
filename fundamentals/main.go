@@ -21,7 +21,8 @@ func main() {
 	// goroutines.GoRoutines_Sample_Two()
 	// goroutines.Channel_Sample_One()
 	// mutex.Mutex_Sample()
-	goroutines.WaitGroup_Sample()
+	// goroutines.WaitGroup_Sample()
+	goroutines.Wg_Mutex_Channel_Demo()
 
 	// interfaces.Interface_Sample()
 
