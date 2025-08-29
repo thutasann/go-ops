@@ -1,6 +1,8 @@
 package main
 
-import "github.com/thutasann/goops/goroutines"
+import (
+	channelsamples "github.com/thutasann/goops/goroutines/channel_samples"
+)
 
 func main() {
 	// Args_Sample()
@@ -22,7 +24,13 @@ func main() {
 	// goroutines.Channel_Sample_One()
 	// mutex.Mutex_Sample()
 	// goroutines.WaitGroup_Sample()
-	goroutines.Wg_Mutex_Channel_Demo()
+	// goroutines.Wg_Mutex_Channel_Demo()
+
+	channelsamples.Basic_Channel_Sample()
+	channelsamples.Buffer_Channel_Sample()
+	channelsamples.Fan_In_Out_Web_Scraper_Sample()
+	channelsamples.Producer_Consumer_Sample()
+	channelsamples.Select_With_Multiple_Channels()
 
 	// interfaces.Interface_Sample()
 
