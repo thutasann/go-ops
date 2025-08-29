@@ -31,6 +31,7 @@ func main() {
 	channelsamples.Fan_In_Out_Web_Scraper_Sample()
 	channelsamples.Producer_Consumer_Sample()
 	channelsamples.Select_With_Multiple_Channels()
+	channelsamples.Worker_Pool_Pattern()
 
 	// interfaces.Interface_Sample()
 
