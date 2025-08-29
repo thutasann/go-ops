@@ -1,7 +1,7 @@
 package main
 
 import (
-	channelsamples "github.com/thutasann/goops/goroutines/channel_samples"
+	wgsamples "github.com/thutasann/goops/goroutines/wg_samples"
 )
 
 func main() {
@@ -26,12 +26,15 @@ func main() {
 	// goroutines.WaitGroup_Sample()
 	// goroutines.Wg_Mutex_Channel_Demo()
 
-	channelsamples.Basic_Channel_Sample()
-	channelsamples.Buffer_Channel_Sample()
-	channelsamples.Fan_In_Out_Web_Scraper_Sample()
-	channelsamples.Producer_Consumer_Sample()
-	channelsamples.Select_With_Multiple_Channels()
-	channelsamples.Worker_Pool_Pattern()
+	// channelsamples.Basic_Channel_Sample()
+	// channelsamples.Buffer_Channel_Sample()
+	// channelsamples.Fan_In_Out_Web_Scraper_Sample()
+	// channelsamples.Producer_Consumer_Sample()
+	// channelsamples.Select_With_Multiple_Channels()
+	// channelsamples.Worker_Pool_Pattern()
+
+	wgsamples.WG_Basic_Sample()
+	wgsamples.Crawling_Sample()
 
 	// interfaces.Interface_Sample()
 
