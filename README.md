@@ -7,3 +7,4 @@
 | Loadbalancer    | [Source](./sh-fundamentals) | Loadbalancer in GoLang    |
 | CGO in Go       | [Source](./cgo-demo)        | CGO in GoLang             |
 | Golang Docker   | [Source](./go-docker/)      | GoLang with Docker        |
+| TCP HTTP        | [Source](./tcp-http)        | TCP to HTTP from scratch  |
