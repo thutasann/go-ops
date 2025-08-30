@@ -1,4 +1,4 @@
-package mutex
+package mutexsamples
 
 import (
 	"fmt"
@@ -24,7 +24,7 @@ func (m *mytype) GetCounter() int {
 	return m.counter
 }
 
-func Mutex_Sample() {
+func Counter_Sample_One() {
 	var wg sync.WaitGroup
 	myTypeInstance := mytype{}
 

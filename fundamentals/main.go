@@ -1,7 +1,7 @@
 package main
 
 import (
-	wgsamples "github.com/thutasann/goops/goroutines/wg_samples"
+	mutexsamples "github.com/thutasann/goops/goroutines/mutex_samples"
 )
 
 func main() {
@@ -33,8 +33,11 @@ func main() {
 	// channelsamples.Select_With_Multiple_Channels()
 	// channelsamples.Worker_Pool_Pattern()
 
-	wgsamples.WG_Basic_Sample()
-	wgsamples.Crawling_Sample()
+	// wgsamples.WG_Basic_Sample()
+	// wgsamples.Crawling_Sample()
+
+	mutexsamples.Counter_Sample_Two()
+	mutexsamples.Shared_Map_Sample()
 
 	// interfaces.Interface_Sample()
 
