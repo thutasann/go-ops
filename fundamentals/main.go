@@ -1,6 +1,8 @@
 package main
 
-import rwmutexsamples "github.com/thutasann/goops/goroutines/rwmutex_samples"
+import (
+	contextsamples "github.com/thutasann/goops/goroutines/context_samples"
+)
 
 func main() {
 	// Args_Sample()
@@ -37,7 +39,11 @@ func main() {
 	// mutexsamples.Counter_Sample_Two()
 	// mutexsamples.Shared_Map_Sample()
 
-	rwmutexsamples.Shared_Config_Sample()
+	// rwmutexsamples.Shared_Config_Sample()
+	// rwmutexsamples.Stock_Trading_Sample()
+
+	// contextsamples.Context_Fetch_Data_Sample()
+	contextsamples.Concurrency_With_Context_Sample()
 
 	// interfaces.Interface_Sample()
 
