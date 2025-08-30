@@ -1,8 +1,6 @@
 package main
 
-import (
-	mutexsamples "github.com/thutasann/goops/goroutines/mutex_samples"
-)
+import rwmutexsamples "github.com/thutasann/goops/goroutines/rwmutex_samples"
 
 func main() {
 	// Args_Sample()
@@ -36,8 +34,10 @@ func main() {
 	// wgsamples.WG_Basic_Sample()
 	// wgsamples.Crawling_Sample()
 
-	mutexsamples.Counter_Sample_Two()
-	mutexsamples.Shared_Map_Sample()
+	// mutexsamples.Counter_Sample_Two()
+	// mutexsamples.Shared_Map_Sample()
+
+	rwmutexsamples.Shared_Config_Sample()
 
 	// interfaces.Interface_Sample()
 
