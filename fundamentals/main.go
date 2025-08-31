@@ -1,7 +1,7 @@
 package main
 
 import (
-	contextsamples "github.com/thutasann/goops/goroutines/context_samples"
+	howtousecontext "github.com/thutasann/goops/goroutines/context_samples/how_to_use_context"
 )
 
 func main() {
@@ -43,7 +43,8 @@ func main() {
 	// rwmutexsamples.Stock_Trading_Sample()
 
 	// contextsamples.Context_Fetch_Data_Sample()
-	contextsamples.Concurrency_With_Context_Sample()
+	// contextsamples.Concurrency_With_Context_Sample()
+	howtousecontext.SampleOne()
 
 	// interfaces.Interface_Sample()
 
