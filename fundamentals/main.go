@@ -1,6 +1,8 @@
 package main
 
-import howtousecontext "github.com/thutasann/goops/howtos/how_to_use_context"
+import (
+	howtousecomposeinterfaces "github.com/thutasann/goops/howtos/how_to_use_compose_interfaces"
+)
 
 func main() {
 	// Args_Sample()
@@ -43,7 +45,8 @@ func main() {
 	// contextsamples.Context_Fetch_Data_Sample()
 	// contextsamples.Concurrency_With_Context_Sample()
 	// howtousecontext.With_Background_Sample()
-	howtousecontext.With_Value_Sample()
+	// howtousecontext.With_Value_Sample()
+	howtousecomposeinterfaces.How_To_Use_Compose_Interfaces_Sample_One()
 
 	// interfaces.Interface_Sample()
 

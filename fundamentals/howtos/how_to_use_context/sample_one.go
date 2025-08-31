@@ -49,7 +49,7 @@ type UserResponse struct {
 
 // Fetch User Data
 func fetch_user_data(ctx context.Context, userID int) (int, error) {
-	val_from_context := ctx.Value(fooKey)
+	val_from_context := ctx.Value(fooKey).(contextKey)
 	fmt.Println("value from context: ", val_from_context)
 
 	ctx, cancel := context.WithTimeout(ctx, time.Millisecond*200)
