@@ -44,7 +44,8 @@ func main() {
 
 	// contextsamples.Context_Fetch_Data_Sample()
 	// contextsamples.Concurrency_With_Context_Sample()
-	howtousecontext.SampleOne()
+	// howtousecontext.With_Background_Sample()
+	howtousecontext.With_Value_Sample()
 
 	// interfaces.Interface_Sample()
 

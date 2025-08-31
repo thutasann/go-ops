@@ -7,12 +7,32 @@ import (
 	"time"
 )
 
-// How to Use Context Sample One
-func SampleOne() {
+// With Background Sample
+func With_Background_Sample() {
 	start := time.Now()
-	fmt.Println("\n==> How to use Context Package Sample One")
+	fmt.Println("\n==> With Background Sample")
 
 	ctx := context.Background()
+	userID := 10
+	val, err := fetch_user_data(ctx, userID)
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println("result:", val)
+	fmt.Println("took: ", time.Since(start))
+}
+
+type contextKey string
+
+const fooKey contextKey = "foo"
+
+// With Value Sample
+func With_Value_Sample() {
+	start := time.Now()
+	fmt.Println("\n==> With Value Sample")
+
+	ctx := context.WithValue(context.Background(), fooKey, "bar")
+
 	userID := 10
 	val, err := fetch_user_data(ctx, userID)
 	if err != nil {
@@ -29,7 +49,10 @@ type UserResponse struct {
 
 // Fetch User Data
 func fetch_user_data(ctx context.Context, userID int) (int, error) {
-	ctx, cancel := context.WithTimeout(ctx, time.Millisecond*700)
+	val_from_context := ctx.Value(fooKey)
+	fmt.Println("value from context: ", val_from_context)
+
+	ctx, cancel := context.WithTimeout(ctx, time.Millisecond*200)
 	defer cancel()
 	respch := make(chan UserResponse)
 
@@ -50,6 +73,6 @@ func fetch_user_data(ctx context.Context, userID int) (int, error) {
 
 // Fetch Slow Third Party Stuff
 func fetch_third_party_stuff_with_can_be_slow() (int, error) {
-	time.Sleep(time.Millisecond * 500)
+	time.Sleep(time.Millisecond * 100)
 	return 666, nil
 }
