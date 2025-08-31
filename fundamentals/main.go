@@ -1,8 +1,6 @@
 package main
 
-import (
-	howtousecontext "github.com/thutasann/goops/goroutines/context_samples/how_to_use_context"
-)
+import howtousecontext "github.com/thutasann/goops/howtos/how_to_use_context"
 
 func main() {
 	// Args_Sample()
