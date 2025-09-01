@@ -47,6 +47,7 @@ func main() {
 	// howtousecontext.With_Background_Sample()
 	// howtousecontext.With_Value_Sample()
 	howtousecomposeinterfaces.How_To_Use_Compose_Interfaces_Sample_One()
+	howtousecomposeinterfaces.Logger_Sample()
 
 	// interfaces.Interface_Sample()
 
