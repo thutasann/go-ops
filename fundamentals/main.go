@@ -48,8 +48,11 @@ func main() {
 	// howtousecontext.With_Value_Sample()
 	// howtousecomposeinterfaces.How_To_Use_Compose_Interfaces_Sample_One()
 	// howtousecomposeinterfaces.Logger_Sample()
-	howtousecomposeinterfaces.Cloud_Storage_Client()
-	howtousecomposeinterfaces.Middleware_Pipeline()
+	// howtousecomposeinterfaces.Cloud_Storage_Client()
+	// howtousecomposeinterfaces.Middleware_Pipeline()
+	// howtousecomposeinterfaces.Reader_Writer_Sample()
+	howtousecomposeinterfaces.Middleware_Pipeline_Pattern()
+	howtousecomposeinterfaces.Payment_Processor_Sample()
 
 	// interfaces.Interface_Sample()
 
