@@ -1,7 +1,7 @@
 package main
 
 import (
-	howtousecomposeinterfaces "github.com/thutasann/goops/howtos/how_to_use_compose_interfaces"
+	howtousegoroutinesforaggdata "github.com/thutasann/goops/howtos/how_to_use_goroutines_for_agg_data"
 )
 
 func main() {
@@ -46,13 +46,16 @@ func main() {
 	// contextsamples.Concurrency_With_Context_Sample()
 	// howtousecontext.With_Background_Sample()
 	// howtousecontext.With_Value_Sample()
+
 	// howtousecomposeinterfaces.How_To_Use_Compose_Interfaces_Sample_One()
 	// howtousecomposeinterfaces.Logger_Sample()
 	// howtousecomposeinterfaces.Cloud_Storage_Client()
 	// howtousecomposeinterfaces.Middleware_Pipeline()
 	// howtousecomposeinterfaces.Reader_Writer_Sample()
-	howtousecomposeinterfaces.Middleware_Pipeline_Pattern()
-	howtousecomposeinterfaces.Payment_Processor_Sample()
+	// howtousecomposeinterfaces.Middleware_Pipeline_Pattern()
+	// howtousecomposeinterfaces.Payment_Processor_Sample()
+
+	howtousegoroutinesforaggdata.SampleOne()
 
 	// interfaces.Interface_Sample()
 
