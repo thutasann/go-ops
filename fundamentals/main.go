@@ -55,7 +55,11 @@ func main() {
 	// howtousecomposeinterfaces.Middleware_Pipeline_Pattern()
 	// howtousecomposeinterfaces.Payment_Processor_Sample()
 
-	howtousegoroutinesforaggdata.SampleOne()
+	// howtousegoroutinesforaggdata.SampleOne()
+	howtousegoroutinesforaggdata.Sum_Of_Numbers()
+	howtousegoroutinesforaggdata.Word_Frequency_Counter()
+	howtousegoroutinesforaggdata.Streaming_Aggregator()
+	howtousegoroutinesforaggdata.FIFO_Pattern()
 
 	// interfaces.Interface_Sample()
 
