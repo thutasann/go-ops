@@ -60,6 +60,8 @@ func main() {
 	howtousegoroutinesforaggdata.Word_Frequency_Counter()
 	howtousegoroutinesforaggdata.Streaming_Aggregator()
 	howtousegoroutinesforaggdata.FIFO_Pattern()
+	howtousegoroutinesforaggdata.Parallel_Map_Reduce_Sample()
+	howtousegoroutinesforaggdata.RealTime_Metrics_Agg_With_Ticker()
 
 	// interfaces.Interface_Sample()
 
