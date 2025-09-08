@@ -62,6 +62,7 @@ func main() {
 	howtousegoroutinesforaggdata.FIFO_Pattern()
 	howtousegoroutinesforaggdata.Parallel_Map_Reduce_Sample()
 	howtousegoroutinesforaggdata.RealTime_Metrics_Agg_With_Ticker()
+	howtousegoroutinesforaggdata.Context_Aware_Aggr()
 
 	// interfaces.Interface_Sample()
 
