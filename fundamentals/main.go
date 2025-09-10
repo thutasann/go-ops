@@ -1,7 +1,7 @@
 package main
 
 import (
-	howtousegoroutinesforaggdata "github.com/thutasann/goops/howtos/how_to_use_goroutines_for_agg_data"
+	howtousechannels "github.com/thutasann/goops/howtos/how_to_use_channels"
 )
 
 func main() {
@@ -56,13 +56,19 @@ func main() {
 	// howtousecomposeinterfaces.Payment_Processor_Sample()
 
 	// howtousegoroutinesforaggdata.SampleOne()
-	howtousegoroutinesforaggdata.Sum_Of_Numbers()
-	howtousegoroutinesforaggdata.Word_Frequency_Counter()
-	howtousegoroutinesforaggdata.Streaming_Aggregator()
-	howtousegoroutinesforaggdata.FIFO_Pattern()
-	howtousegoroutinesforaggdata.Parallel_Map_Reduce_Sample()
-	howtousegoroutinesforaggdata.RealTime_Metrics_Agg_With_Ticker()
-	howtousegoroutinesforaggdata.Context_Aware_Aggr()
+	// howtousegoroutinesforaggdata.Sum_Of_Numbers()
+	// howtousegoroutinesforaggdata.Word_Frequency_Counter()
+	// howtousegoroutinesforaggdata.Streaming_Aggregator()
+	// howtousegoroutinesforaggdata.FIFO_Pattern()
+	// howtousegoroutinesforaggdata.Parallel_Map_Reduce_Sample()
+	// howtousegoroutinesforaggdata.RealTime_Metrics_Agg_With_Ticker()
+	// howtousegoroutinesforaggdata.Context_Aware_Aggr()
+
+	// howtousechannels.Basic_Sample_One()
+	// howtousechannels.Buffered_Vs_Unbuffered()
+	// howtousechannels.Unbuffered_Channel_HandShake()
+	// howtousechannels.Buffered_Channel_Decoupling()
+	howtousechannels.Non_Blocking_Send_Receive()
 
 	// interfaces.Interface_Sample()
 
