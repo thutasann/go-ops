@@ -68,7 +68,8 @@ func main() {
 	// howtousechannels.Buffered_Vs_Unbuffered()
 	// howtousechannels.Unbuffered_Channel_HandShake()
 	// howtousechannels.Buffered_Channel_Decoupling()
-	howtousechannels.Non_Blocking_Send_Receive()
+	// howtousechannels.Non_Blocking_Send_Receive()
+	howtousechannels.Bounded_Concurrency()
 
 	// interfaces.Interface_Sample()
 
