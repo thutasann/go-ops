@@ -70,6 +70,7 @@ func main() {
 	// howtousechannels.Buffered_Channel_Decoupling()
 	// howtousechannels.Non_Blocking_Send_Receive()
 	howtousechannels.Bounded_Concurrency()
+	howtousechannels.Pipeline_Small_Buffer()
 
 	// interfaces.Interface_Sample()
 
