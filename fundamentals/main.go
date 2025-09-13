@@ -1,7 +1,7 @@
 package main
 
 import (
-	howtousechannels "github.com/thutasann/goops/howtos/how_to_use_channels"
+	bufferedvsunbuffered "github.com/thutasann/goops/howtos/how_to_use_channels/buffered_vs_unbuffered"
 )
 
 func main() {
@@ -71,7 +71,11 @@ func main() {
 	// howtousechannels.Non_Blocking_Send_Receive()
 	// howtousechannels.Bounded_Concurrency()
 	// howtousechannels.Unbuffereed_Handshake()
-	howtousechannels.Buffered_Waiting_Room()
+	// howtousechannels.Buffered_Waiting_Room()
+	bufferedvsunbuffered.Basic_Send_Receive_Sync()
+	// bufferedvsunbuffered.Deadlock_If_No_Receiver()
+	bufferedvsunbuffered.Ping_Pong()
+	bufferedvsunbuffered.Fill_Buffer_Then_Block()
 
 	// interfaces.Interface_Sample()
 
