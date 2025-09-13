@@ -69,8 +69,9 @@ func main() {
 	// howtousechannels.Unbuffered_Channel_HandShake()
 	// howtousechannels.Buffered_Channel_Decoupling()
 	// howtousechannels.Non_Blocking_Send_Receive()
-	howtousechannels.Bounded_Concurrency()
-	howtousechannels.Pipeline_Small_Buffer()
+	// howtousechannels.Bounded_Concurrency()
+	// howtousechannels.Unbuffereed_Handshake()
+	howtousechannels.Buffered_Waiting_Room()
 
 	// interfaces.Interface_Sample()
 

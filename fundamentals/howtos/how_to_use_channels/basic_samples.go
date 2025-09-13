@@ -92,3 +92,41 @@ func Non_Blocking_Send_Receive() {
 		fmt.Println("would block on receive")
 	}
 }
+
+func Unbuffereed_Handshake() {
+	fmt.Println("\n===> Unbufferred Handshake")
+	ch := make(chan string)
+
+	go func() {
+		fmt.Println("Sender: trying to send")
+		ch <- "hi" // blocks until
+		fmt.Println("Sender: sent successfully")
+	}()
+
+	fmt.Println("Main: waiting before receiving...")
+	msg := <-ch // unblocks sender
+	fmt.Println("Main: got", msg)
+}
+
+func Buffered_Waiting_Room() {
+	fmt.Println("\n===> buffered waiting room")
+
+	ch := make(chan int, 2) // buffer of size 2
+
+	ch <- 1
+	fmt.Println("pushed 1")
+	ch <- 2
+	fmt.Println("pushed 2")
+
+	// buffer full now, next send will block
+	go func() {
+		fmt.Println("trying to send 3...")
+		ch <- 3 // blocks until somesone receives
+		fmt.Println("sent 3")
+	}()
+
+	fmt.Println("receiving...")
+	fmt.Println(<-ch) // frees space, lets goroutine continue
+	fmt.Println(<-ch)
+	fmt.Println(<-ch)
+}
