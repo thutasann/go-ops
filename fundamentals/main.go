@@ -2,6 +2,7 @@ package main
 
 import (
 	bufferedvsunbuffered "github.com/thutasann/goops/howtos/how_to_use_channels/buffered_vs_unbuffered"
+	syncvsasync "github.com/thutasann/goops/sync_vs_async"
 )
 
 func main() {
@@ -87,4 +88,6 @@ func main() {
 	// interfaces.Interface_Sample()
 
 	// Worker_Pool_Sample()
+
+	syncvsasync.Sync_HTTP_Calls_Sample()
 }
