@@ -2,6 +2,7 @@ package bufferedvsunbuffered
 
 import (
 	"fmt"
+	"time"
 )
 
 // Basic send/receive sync
@@ -62,4 +63,60 @@ func Fill_Buffer_Then_Block() {
 	fmt.Println("main receives (frees space):", <-ch) // frees space
 	fmt.Println("main receives:", <-ch)
 	fmt.Println("main receives:", <-ch)
+}
+
+// Drain Empty Buffer blocks
+func Drain_Empty_Buffer_Blocks() {
+	fmt.Println("\n===> Drain Empty Buffer Blocks")
+	ch := make(chan string, 1)
+
+	go func() {
+		fmt.Println("waiting to receive...")
+		fmt.Println("got: ", <-ch) // blocks until main sends
+	}()
+
+	ch <- "hello"
+}
+
+// Producer Faster than consumer
+// Producer can run ahead until buffer fills, then it must wait.
+func Producer_Faster_Than_Consumer() {
+	ch := make(chan int, 3)
+
+	// producer
+	go func() {
+		for i := 0; i < 6; i++ {
+			fmt.Println("[producer] sending:", i)
+			ch <- i
+			fmt.Println("[producer] sent:", i)
+		}
+		close(ch)
+	}()
+
+	// consumer
+	for v := range ch {
+		time.Sleep(500 * time.Millisecond)
+		fmt.Println("[consumer] got:", v)
+	}
+}
+
+// Worker Pool Concurrency Limit
+func Worker_Pool_Concurrency_Limit() {
+	jobs := 5
+	sem := make(chan struct{}, 2) // max 2 workers at a time
+
+	for i := 1; i <= jobs; i++ {
+		sem <- struct{}{}
+		go func(id int) {
+			defer func() { <-sem }()
+			fmt.Println("working:", id)
+			time.Sleep(500 * time.Millisecond)
+			fmt.Println("done:", id)
+		}(i)
+	}
+
+	// wait for all the slots to be freed
+	for i := 0; i < cap(sem); i++ {
+		sem <- struct{}{}
+	}
 }
