@@ -1,7 +1,6 @@
 package main
 
 import (
-	bufferedvsunbuffered "github.com/thutasann/goops/howtos/how_to_use_channels/buffered_vs_unbuffered"
 	syncvsasync "github.com/thutasann/goops/sync_vs_async"
 )
 
@@ -83,11 +82,12 @@ func main() {
 	// bufferedvsunbuffered.Web_Scraping_With_Concurrency_Limit()
 	// bufferedvsunbuffered.FileDownloader()
 	// bufferedvsunbuffered.RateLimitedAPI()
-	bufferedvsunbuffered.Pipeline_Processing()
+	// bufferedvsunbuffered.Pipeline_Processing()
 
 	// interfaces.Interface_Sample()
 
 	// Worker_Pool_Sample()
 
-	syncvsasync.Sync_HTTP_Calls_Sample()
+	// syncvsasync.Sync_HTTP_Calls_Sample()
+	syncvsasync.Async_HTTP_Calls()
 }
