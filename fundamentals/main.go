@@ -89,5 +89,7 @@ func main() {
 	// Worker_Pool_Sample()
 
 	// syncvsasync.Sync_HTTP_Calls_Sample()
-	syncvsasync.Async_HTTP_Calls()
+	// syncvsasync.Async_HTTP_Calls()
+	// syncvsasync.Async_Worker_Sample()
+	syncvsasync.WebServer_Sync_Vs_Async()
 }
