@@ -1,8 +1,6 @@
 package main
 
-import (
-	syncvsasync "github.com/thutasann/goops/sync_vs_async"
-)
+import "github.com/thutasann/goops/howtos/howtoslices"
 
 func main() {
 	// Args_Sample()
@@ -84,6 +82,12 @@ func main() {
 	// bufferedvsunbuffered.RateLimitedAPI()
 	// bufferedvsunbuffered.Pipeline_Processing()
 
+	// howtoslices.Slice_Anatomy()
+	// howtoslices.Basic_Slicing()
+	// howtoslices.Slices_Share_The_Same_Array()
+	// howtoslices.Capacity_Controls_Growth()
+	howtoslices.Reslicing()
+
 	// interfaces.Interface_Sample()
 
 	// Worker_Pool_Sample()
@@ -104,5 +108,6 @@ func main() {
 	// syncvsasync.Synchronization_With_Channel()
 	// syncvsasync.Once_Sample()
 	// syncvsasync.Cond_Sample()
-	syncvsasync.Context_With_Timeout_HTTP()
+	// syncvsasync.Context_With_Timeout_HTTP()
+
 }
