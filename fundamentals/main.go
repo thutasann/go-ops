@@ -91,5 +91,9 @@ func main() {
 	// syncvsasync.Sync_HTTP_Calls_Sample()
 	// syncvsasync.Async_HTTP_Calls()
 	// syncvsasync.Async_Worker_Sample()
-	syncvsasync.WebServer_Sync_Vs_Async()
+	// syncvsasync.WebServer_Sync_Vs_Async()
+	// syncvsasync.MircoServices_Calls()
+	// syncvsasync.Image_Processing_Worker()
+	// syncvsasync.Async_Chat_Server()
+	syncvsasync.Cron_Like_Scheduler()
 }
