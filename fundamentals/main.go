@@ -86,7 +86,11 @@ func main() {
 	// howtoslices.Basic_Slicing()
 	// howtoslices.Slices_Share_The_Same_Array()
 	// howtoslices.Capacity_Controls_Growth()
-	howtoslices.Reslicing()
+	// howtoslices.Reslicing()
+	// howtoslices.Copying_Slices()
+	// howtoslices.Slice_Pagination_Sample()
+	// howtoslices.Splitting_CSV_Rows()
+	howtoslices.Ring_Buffer_Chat_Messages()
 
 	// interfaces.Interface_Sample()
 
