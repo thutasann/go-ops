@@ -91,7 +91,8 @@ func main() {
 	// howtoslices.Slice_Pagination_Sample()
 	// howtoslices.Splitting_CSV_Rows()
 	// howtoslices.Ring_Buffer_Chat_Messages()
-	howtoslices.Remove_Duplicates()
+	// howtoslices.Remove_Duplicates()
+	howtoslices.Chat_Message_Buffer()
 
 	// interfaces.Interface_Sample()
 
