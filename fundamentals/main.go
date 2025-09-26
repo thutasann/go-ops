@@ -92,7 +92,10 @@ func main() {
 	// howtoslices.Splitting_CSV_Rows()
 	// howtoslices.Ring_Buffer_Chat_Messages()
 	// howtoslices.Remove_Duplicates()
-	howtoslices.Chat_Message_Buffer()
+	// howtoslices.Chat_Message_Buffer()
+	howtoslices.Split_Work_For_Goroutines()
+	howtoslices.Insert_At_Sample()
+	howtoslices.Rotate_Slice_Sample()
 
 	// interfaces.Interface_Sample()
 
