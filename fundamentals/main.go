@@ -1,6 +1,8 @@
 package main
 
-import "github.com/thutasann/goops/howtos/howtoslices"
+import (
+	"github.com/thutasann/goops/howtos/howtoslices/slicedatatsructure"
+)
 
 func main() {
 	// Args_Sample()
@@ -93,9 +95,13 @@ func main() {
 	// howtoslices.Ring_Buffer_Chat_Messages()
 	// howtoslices.Remove_Duplicates()
 	// howtoslices.Chat_Message_Buffer()
-	howtoslices.Split_Work_For_Goroutines()
-	howtoslices.Insert_At_Sample()
-	howtoslices.Rotate_Slice_Sample()
+	// howtoslices.Split_Work_For_Goroutines()
+	// howtoslices.Insert_At_Sample()
+	// howtoslices.Rotate_Slice_Sample()
+	// howtoslices.Chunking_Data_Sample()
+	// howtoslices.Stack_Slice_Sample()
+	// howtoslices.Queue_Sample()
+	slicedatatsructure.Stack_Slice_DSA()
 
 	// interfaces.Interface_Sample()
 
