@@ -103,6 +103,7 @@ func main() {
 	// howtoslices.Queue_Sample()
 	slicedatatsructure.Stack_Slice_DSA()
 	slicedatatsructure.Queue_Slice_DSA()
+	slicedatatsructure.Double_Ended_Queue_slice_DSA()
 
 	// interfaces.Interface_Sample()
 
