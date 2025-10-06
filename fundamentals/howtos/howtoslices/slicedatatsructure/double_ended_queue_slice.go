@@ -44,8 +44,8 @@ func (d *Deque[T]) Len() int {
 	return len(d.items)
 }
 
-func Double_Ended_Queue_slice_DSA() {
-	fmt.Println("\n==> DEQUEU DSA")
+func Double_Ended_Queue_Slice_DSA() {
+	fmt.Println("\n==> DEQUE DSA")
 
 	deque := &Deque[int]{}
 	deque.PushBack(1)
