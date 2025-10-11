@@ -107,6 +107,7 @@ func main() {
 	// slicedatatsructure.Priority_Queue_Slice_DSA()
 	slicedatatsructure.Ring_Buffer_Slice_DSA()
 	slicedatatsructure.Set_Slice_DSA()
+	slicedatatsructure.Map_Slice_DSA()
 
 	// interfaces.Interface_Sample()
 
