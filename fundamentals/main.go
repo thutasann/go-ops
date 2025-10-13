@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/thutasann/goops/howtos/howtoslices/slicedatatsructure"
+	icinterfaces "github.com/thutasann/goops/intermediate_concepts/ic_interfaces"
 )
 
 func main() {
@@ -101,13 +101,16 @@ func main() {
 	// howtoslices.Chunking_Data_Sample()
 	// howtoslices.Stack_Slice_Sample()
 	// howtoslices.Queue_Sample()
+	// howtoslices.Filter_Transform_Sample()
+	// howtoslices.Batch_Processing_Sample()
+
 	// slicedatatsructure.Stack_Slice_DSA()
 	// slicedatatsructure.Queue_Slice_DSA()
 	// slicedatatsructure.Double_Ended_Queue_Slice_DSA()
 	// slicedatatsructure.Priority_Queue_Slice_DSA()
-	slicedatatsructure.Ring_Buffer_Slice_DSA()
-	slicedatatsructure.Set_Slice_DSA()
-	slicedatatsructure.Map_Slice_DSA()
+	// slicedatatsructure.Ring_Buffer_Slice_DSA()
+	// slicedatatsructure.Set_Slice_DSA()
+	// slicedatatsructure.Map_Slice_DSA()
 
 	// interfaces.Interface_Sample()
 
@@ -131,4 +134,5 @@ func main() {
 	// syncvsasync.Cond_Sample()
 	// syncvsasync.Context_With_Timeout_HTTP()
 
+	icinterfaces.Printer_Interface_Sample()
 }
