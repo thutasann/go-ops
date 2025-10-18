@@ -1,7 +1,7 @@
 package main
 
 import (
-	icinterfaces "github.com/thutasann/goops/intermediate_concepts/ic_interfaces"
+	icmethodsreceivers "github.com/thutasann/goops/intermediate_concepts/ic_methods_receivers"
 )
 
 func main() {
@@ -134,5 +134,7 @@ func main() {
 	// syncvsasync.Cond_Sample()
 	// syncvsasync.Context_With_Timeout_HTTP()
 
-	icinterfaces.Printer_Interface_Sample()
+	// icinterfaces.Printer_Interface_Sample()
+	// icstructembedding.Car_Embedding()
+	icmethodsreceivers.Methods_Receivers()
 }
