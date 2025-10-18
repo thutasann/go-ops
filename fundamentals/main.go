@@ -2,6 +2,7 @@ package main
 
 import (
 	icinterfaces "github.com/thutasann/goops/intermediate_concepts/ic_interfaces"
+	icstructembedding "github.com/thutasann/goops/intermediate_concepts/ic_struct_embedding"
 )
 
 func main() {
@@ -135,4 +136,5 @@ func main() {
 	// syncvsasync.Context_With_Timeout_HTTP()
 
 	icinterfaces.Printer_Interface_Sample()
+	icstructembedding.Car_Embedding()
 }
