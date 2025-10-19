@@ -1,12 +1,7 @@
 package main
 
 import (
-<<<<<<< HEAD
-	icmethodsreceivers "github.com/thutasann/goops/intermediate_concepts/ic_methods_receivers"
-=======
-	icinterfaces "github.com/thutasann/goops/intermediate_concepts/ic_interfaces"
-	icstructembedding "github.com/thutasann/goops/intermediate_concepts/ic_struct_embedding"
->>>>>>> 39cb7a5e11b41dc0c895906a6a384598b906280d
+	icselect "github.com/thutasann/goops/intermediate_concepts/ic_select"
 )
 
 func main() {
@@ -141,5 +136,9 @@ func main() {
 
 	// icinterfaces.Printer_Interface_Sample()
 	// icstructembedding.Car_Embedding()
-	icmethodsreceivers.Methods_Receivers()
+	// icmethodsreceivers.Methods_Receivers()
+	// icgoroutines.Cooking()
+	// icchannels.Chef_Waiter()
+	// icchannels.Challenge_Chef_Waiter()
+	icselect.Restaurant_Manager()
 }
