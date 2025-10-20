@@ -140,5 +140,10 @@ func main() {
 	// icgoroutines.Cooking()
 	// icchannels.Chef_Waiter()
 	// icchannels.Challenge_Chef_Waiter()
-	icselect.Restaurant_Manager()
+	// icselect.Restaurant_Manager()
+	// icselect.Basic_Timeout_Pattern()
+	// icselect.Random_Channel_Race()
+	// icselect.Non_Blocking_Send_Receive()
+	// icselect.Multiple_Goroutines_Coordination()
+	icselect.Select_Context_Cancellation()
 }
