@@ -148,5 +148,6 @@ func main() {
 	// icselect.Select_Context_Cancellation()
 	// icselect.Worker_Pool_Select()
 	// icselect.Pipeline_Sample()
-	icselect.Timeout_Retry()
+	// icselect.Timeout_Retry()
+	icselect.RateLimit()
 }
