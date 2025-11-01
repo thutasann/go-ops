@@ -1,7 +1,7 @@
 package main
 
 import (
-	icselect "github.com/thutasann/goops/intermediate_concepts/ic_select"
+	advancedconcepts "github.com/thutasann/goops/advanced_concepts"
 )
 
 func main() {
@@ -149,5 +149,7 @@ func main() {
 	// icselect.Worker_Pool_Select()
 	// icselect.Pipeline_Sample()
 	// icselect.Timeout_Retry()
-	icselect.RateLimit()
+	// icselect.RateLimit()
+
+	advancedconcepts.WorkerPool_With_Context_Cancellation()
 }
