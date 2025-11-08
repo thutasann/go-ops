@@ -1,7 +1,7 @@
 package main
 
 import (
-	advancedcontexts "github.com/thutasann/goops/advanced_concepts/advanced_contexts"
+	advancedchannels "github.com/thutasann/goops/advanced_concepts/advanced_channels"
 )
 
 func main() {
@@ -154,5 +154,6 @@ func main() {
 	// advancedconcepts.WorkerPool_With_Context_Cancellation()
 	// advancedcontexts.Context_Timeout()
 	// advancedcontexts.ContextWithValue()
-	advancedcontexts.Context_HTTP()
+	// advancedcontexts.Context_HTTP()
+	advancedchannels.Fetch_User_By_Name()
 }
