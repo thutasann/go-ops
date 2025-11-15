@@ -1,7 +1,7 @@
 package main
 
 import (
-	advancedchannels "github.com/thutasann/goops/advanced_concepts/advanced_channels"
+	advancedpointers "github.com/thutasann/goops/advanced_concepts/advanced_pointers"
 )
 
 func main() {
@@ -155,5 +155,7 @@ func main() {
 	// advancedcontexts.Context_Timeout()
 	// advancedcontexts.ContextWithValue()
 	// advancedcontexts.Context_HTTP()
-	advancedchannels.Fetch_User_By_Name()
+	// advancedchannels.Fetch_User_By_Name()
+	// advancedpointers.Basic_One()
+	advancedpointers.Mutate_UserName()
 }
