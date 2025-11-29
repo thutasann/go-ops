@@ -158,4 +158,5 @@ func main() {
 	// advancedchannels.Fetch_User_By_Name()
 	// advancedpointers.Basic_One()
 	advancedpointers.Mutate_UserName()
+	advancedpointers.CreatePointer_Sample()
 }

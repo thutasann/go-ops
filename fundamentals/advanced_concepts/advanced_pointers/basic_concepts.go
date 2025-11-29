@@ -2,6 +2,10 @@ package advancedpointers
 
 import "fmt"
 
+func Syntax() {
+	fmt.Println("\n==> Syntax")
+}
+
 func Basic_One() {
 	fmt.Println("\n==> Basic concept 1")
 
@@ -63,4 +67,15 @@ func Mutate_UserName() {
 	u := PointerUser{ID: 42, Name: "Gopher"}
 	u.updateName("James")
 	fmt.Println(u)
+}
+
+func CreatePointer_Sample() {
+	fmt.Println("\n==> Create Pointer Sample")
+	p := create_pointer()
+	fmt.Println(p)
+}
+
+func create_pointer() *int {
+	x := 42
+	return &x
 }
