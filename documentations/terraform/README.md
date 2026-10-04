@@ -6,6 +6,8 @@ Recommended path: **short Terraform introduction â†’ hands-on AWS crash course â
 
 Exam information was checked on October 4, 2026.
 
+If you want to learn EC2 first while continuing to code, start with [Learn EC2 by Deploying a Go App](ec2-golang-roadmap.md), which includes YouTube recommendations and a short deployment learning path.
+
 ## Certification details
 
 The current certification is **HashiCorp Certified: Terraform Associate (004)**.
