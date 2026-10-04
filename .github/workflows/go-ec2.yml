@@ -23,3 +23,13 @@ jobs:
         run: docker build -t thutasann/go-ec2 .
       - name: Push image to docker Hub
         run: docker push thutasann/go-ec2:latest
+  deploy:
+    needs: build
+    runs-on: self-hosted
+    steps:
+      - name: Pull docker image
+        run: docker pull thutasann/go-ec2:latest
+      - name: Delete old container
+        run: docker rm -rf go-ec2-container
+      - name: Run docker container
+        run: docker run -d -p 4040:4040 --name go-ec2-container thutasann/go-ec2
