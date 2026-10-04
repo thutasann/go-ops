@@ -1,0 +1,25 @@
+name: Deploy Golang to Ec2 (go-ec2)
+
+on:
+  push:
+    branches:
+      - feat/go-ec2
+
+defaults:
+  run:
+    working-directory: ./go-ec2
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+      - name: Create .env file
+        run: echo "PORT=${{secrets.GO_EC2_PORT}}" >> .env
+      - name: Login to Docker Hub
+        run: docker login -u ${{secrets.GO_EC2_DOCKER_USERNAME}} -p ${{secrets.GO_EC2_DOCKER_PASSWORD}}
+      - name: Build docker image
+        run: docker build -t thutasann/go-ec2 .
+      - name: Push image to docker Hub
+        run: docker push thutasann/go-ec2:latest
