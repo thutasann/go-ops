@@ -5,13 +5,12 @@ on:
     branches:
       - feat/go-ec2
 
-defaults:
-  run:
-    working-directory: ./go-ec2
-
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./go-ec2
     steps:
       - name: Checkout source
         uses: actions/checkout@v4
@@ -30,6 +29,10 @@ jobs:
       - name: Pull docker image
         run: docker pull thutasann/go-ec2:latest
       - name: Delete old container
-        run: docker rm -rf go-ec2-container
+        run: |
+          containers=$(docker ps -a --format '{{.Names}}')
+          if printf '%s\n' "$containers" | grep -Fxq 'go-ec2-container'; then
+            docker rm -f go-ec2-container
+          fi
       - name: Run docker container
         run: docker run -d -p 4040:4040 --name go-ec2-container thutasann/go-ec2
