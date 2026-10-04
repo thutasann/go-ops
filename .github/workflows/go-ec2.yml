@@ -1,0 +1,38 @@
+name: Deploy Golang to Ec2 (go-ec2)
+
+on:
+  push:
+    branches:
+      - feat/go-ec2
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./go-ec2
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+      - name: Create .env file
+        run: echo "PORT=${{secrets.GO_EC2_PORT}}" >> .env
+      - name: Login to Docker Hub
+        run: docker login -u ${{secrets.GO_EC2_DOCKER_USERNAME}} -p ${{secrets.GO_EC2_DOCKER_PASSWORD}}
+      - name: Build docker image
+        run: docker build -t thutasann/go-ec2 .
+      - name: Push image to docker Hub
+        run: docker push thutasann/go-ec2:latest
+  deploy:
+    needs: build
+    runs-on: self-hosted
+    steps:
+      - name: Pull docker image
+        run: docker pull thutasann/go-ec2:latest
+      - name: Delete old container
+        run: |
+          containers=$(docker ps -a --format '{{.Names}}')
+          if printf '%s\n' "$containers" | grep -Fxq 'go-ec2-container'; then
+            docker rm -f go-ec2-container
+          fi
+      - name: Run docker container
+        run: docker run -d -p 4040:4040 --name go-ec2-container thutasann/go-ec2
